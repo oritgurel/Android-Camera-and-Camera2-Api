@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TunityHomeTest</string>
+    <string name="middle_pixel_values">Middle pixel values:</string>
+    <string name="r">r:</string>
+    <string name="g">g:</string>
+    <string name="b">b:</string>
+</resources>

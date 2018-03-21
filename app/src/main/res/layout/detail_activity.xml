@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/middle_pixel_values"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:padding="20dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/values_display_container"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_title"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/value_scheme_r"
+            android:layout_marginVertical="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r"
+        android:textSize="@dimen/text"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/r_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="255"
+            android:textSize="@dimen/text"
+            android:layout_marginHorizontal="50dp"
+            android:layout_toRightOf="@id/r"/>
+
+        <TextView
+            android:id="@+id/r_color"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            tools:background="@color/colorAccent"
+            android:textSize="@dimen/text"
+            android:layout_toRightOf="@id/r_value"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/value_scheme_g"
+            android:layout_marginVertical="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/value_scheme_r">
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/g"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/g_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="255"
+                android:textSize="@dimen/text"
+                android:layout_marginHorizontal="50dp"
+                android:layout_toRightOf="@id/g"/>
+
+            <TextView
+                android:id="@+id/g_color"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                tools:background="@color/colorAccent"
+                android:textSize="@dimen/text"
+                android:layout_toRightOf="@id/g_value"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/value_scheme_b"
+            android:layout_marginVertical="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/value_scheme_g">
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b"
+                android:textSize="@dimen/text"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/b_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="255"
+                android:textSize="@dimen/text"
+                android:layout_marginHorizontal="50dp"
+                android:layout_toRightOf="@id/b"/>
+
+            <TextView
+                android:id="@+id/b_color"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                tools:background="@color/colorAccent"
+                android:textSize="@dimen/text"
+                android:layout_toRightOf="@id/b_value"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
