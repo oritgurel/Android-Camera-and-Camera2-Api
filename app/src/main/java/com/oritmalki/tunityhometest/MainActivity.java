@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         camera = checkDeviceCamera();
+        camera.setDisplayOrientation(90);
         mImagesurfaceView = new ImageSurfaceView(MainActivity.this, camera);
         cameraPreviewLayout.addView(mImagesurfaceView);
                             camera.startPreview();
